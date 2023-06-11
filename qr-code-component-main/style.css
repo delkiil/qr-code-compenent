@@ -1,0 +1,73 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: "Outfit", sans-serif;
+    background-color: hsl(212, 45%, 89%);
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.content {
+    padding: 25px;
+    width: 340px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: -15px 25px 30px rgba(0, 0, 0, 0.363);
+    transition: 2s all;
+    animation: floating 7s ease-in-out infinite;
+}
+
+img {
+    border-radius: 35px;
+    max-width: 290px;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 15px 0;
+    color: hsl(218, 44%, 22%);
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+}
+
+
+
+
+/* animação de fato (deixei no final para o código não ficar poluído)*/
+
+.content:hover {
+    scale: 1.07;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+        rotate: (0);
+    }
+
+    50% {
+        transform: translateY(-50px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
