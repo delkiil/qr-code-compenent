@@ -5,5 +5,5 @@ Projeto inicial realizado, proposto pelo Front-End Mentor, aqui está o <a href=
 # 🛠️O que foi utilizado.
 <ul>
    <li>📄HTML5
-   <li>🎨CSS [flexbox]
+   <li>🎨CSS - flexbox
 </ul>
